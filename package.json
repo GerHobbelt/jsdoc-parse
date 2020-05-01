@@ -22,7 +22,9 @@
   "scripts": {
     "test": "tape test/*.js",
     "lint": "jshint lib/*.js bin/*.js test/*.js; echo",
-    "docs": "jsdoc2md -t jsdoc2md/README.hbs -p list lib/jsdoc-parse.js > README.md; echo"
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs -p list lib/jsdoc-parse.js > README.md; echo",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "array-tools": "^2",
@@ -31,9 +33,11 @@
     "jsdoc-75lb": "3.4.0-dev.9",
     "more-fs": "~0.5.0",
     "object-tools": "^2",
-    "walk-back": "~0.1"
+    "walk-back": "~0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "tape": "^4"
-  }
+  },
+  "snyk": true
 }
