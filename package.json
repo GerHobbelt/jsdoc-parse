@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "array-tools": "^2",
-    "command-line-args": "^1",
+    "command-line-args": "^3.0.0",
     "file-set": "~0.2.1",
     "jsdoc-75lb": "3.4.0-dev.9",
     "more-fs": "~0.5.0",
